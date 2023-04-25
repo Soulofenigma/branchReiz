@@ -10,6 +10,6 @@ ls
 
 pkg install mono
 
-csc branchReiz.cs
+csc BranchReiz.cs
 
-mono branchReiz.exe
+mono BranchReiz.exe
