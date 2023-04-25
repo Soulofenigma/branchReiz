@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-public class BranchReiz
+public class Branch
 {
     public string Name { get; set; }
     public List<Branch> Branches { get; set; }
 
-    public BranchReiz(string name)
+    public Branch(string name)
     {
         Name = name;
         Branches = new List<Branch>();
@@ -61,7 +61,7 @@ public class Program
         branch2.Branches.Add(branch3);
         branch1.Branches.Add(branch2);
 
-        //to calculate depth
+        // calculate depth
         int depth = CalculateDepth(branch1);
         Console.WriteLine($"The depth of the provided structure is: {depth}");
     }
