@@ -6,7 +6,7 @@ public class BranchReiz
     public string Name { get; set; }
     public List<Branch> Branches { get; set; }
 
-    public Branch(string name)
+    public BranchReiz(string name)
     {
         Name = name;
         Branches = new List<Branch>();
